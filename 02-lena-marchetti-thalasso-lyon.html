@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Réservez votre Thalasso Bain bébé à Lyon — Léna Marchetti</title>
+<meta name="description" content="Thalasso Bain bébé à Lyon avec Léna Marchetti, sage-femme et accompagnante périnatale. Un rituel aquatique qui apaise, relie, enveloppe. 120€ · 1h. Réservation en ligne 24h/24.">
+<link rel="canonical" href="https://lena-marchetti-perinatalite.fr/thalasso-bain-bebe-lyon">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thalasso Bain bébé à Lyon — Léna Marchetti">
+<meta property="og:url" content="https://lena-marchetti-perinatalite.fr/thalasso-bain-bebe-lyon">
+<meta property="og:image" content="https://www.instanttoodoux.fr/wp-content/uploads/2023/07/Elio_-5-768x512.jpg">
+<meta property="og:locale" content="fr_FR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+
+/* ─── PALETTE — UNIVERS PRUNE VELOURS + ROSE DORÉ ───────────── */
+:root{
+  --nuit:      #3D2433;                  /* prune velours — sections principales */
+  --nuit2:     #2D1B28;                  /* prune profond — alternance */
+  --sauge:     #5C4050;                  /* prune doux — rarement utilisé */
+  --or:        #C89B8C;                  /* rose doré chaud — accents, CTA */
+  --or-pale:   #E8CFC3;                  /* rose poudré lumineux — italiques */
+  --creme:     #F5EFE8;                  /* beige lin crémeux — texte principal */
+  --glass:     rgba(61,36,51,.65);
+  --or-line:   rgba(200,155,140,.25);
+  --f-serif:   'Libre Caslon Display', Georgia, serif;
+  --f-sans:    'DM Sans', sans-serif;
+  --max:       1320px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--f-sans);font-weight:300;background:var(--nuit2);color:var(--creme);padding-bottom:68px;overflow-x:hidden;cursor:none;}
+a{color:inherit;text-decoration:none;}
+
+.cursor{position:fixed;width:10px;height:10px;background:var(--or);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:opacity .3s;}
+.cursor-ring{position:fixed;width:36px;height:36px;border:1px solid rgba(200,155,140,.5);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:transform .35s cubic-bezier(.23,1,.32,1),width .3s,height .3s;}
+
+.s8-sticky{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(45,27,40,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--or-line);display:flex;align-items:center;justify-content:space-between;padding:14px 48px;gap:16px;}
+.s8-sticky-id{font-family:var(--f-sans);font-size:.58rem;font-weight:300;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,239,232,.3);}
+.s8-sticky-id strong{color:var(--or);font-weight:400;}
+.s8-sticky-btns{display:flex;gap:0;}
+.s8-btn-sticky{background:transparent;color:rgba(245,239,232,.35);font-family:var(--f-sans);font-size:.58rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;padding:10px 22px;border:1px solid rgba(200,155,140,.2);transition:all .3s;display:inline-block;}
+.s8-btn-sticky:hover{border-color:var(--or);color:var(--or);}
+.s8-btn-sticky-cta{background:var(--or);color:var(--nuit2);font-family:var(--f-sans);font-size:.58rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:10px 28px;border:1px solid var(--or);transition:all .3s;display:inline-block;margin-left:-1px;}
+.s8-btn-sticky-cta:hover{background:transparent;color:var(--or);}
+@media(max-width:600px){.s8-sticky{padding:12px 20px;}.s8-sticky-id{display:none;}.s8-sticky-btns{width:100%;}.s8-btn-sticky,.s8-btn-sticky-cta{flex:1;text-align:center;}}
+
+.s8-hero{position:relative;min-height:100vh;display:flex;flex-direction:column;overflow:hidden;}
+.s8-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.06);transition:transform 18s cubic-bezier(.25,.46,.45,.94);filter:brightness(.65) saturate(.9);}
+.s8-hero-bg.loaded{transform:scale(1);}
+.s8-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(45,27,40,.1) 0%,rgba(45,27,40,0) 35%,rgba(45,27,40,0) 50%,rgba(45,27,40,.92) 100%);}
+.s8-hero-inner{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:flex-end;max-width:var(--max);margin:0 auto;width:100%;padding:0 6% 72px;}
+.s8-hero-breadcrumb{display:flex;align-items:center;gap:8px;font-family:var(--f-sans);font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,239,232,.2);margin-bottom:32px;opacity:0;animation:fadeUp .7s .1s ease forwards;}
+.s8-hero-breadcrumb a:hover{color:var(--or);}
+.s8-hero-breadcrumb span{color:rgba(245,239,232,.1);}
+.s8-hero-tag{display:inline-flex;align-items:center;gap:16px;font-family:var(--f-sans);font-size:.56rem;font-weight:400;letter-spacing:.3em;text-transform:uppercase;color:var(--or);margin-bottom:28px;opacity:0;animation:fadeUp .8s .2s ease forwards;}
+.s8-hero-tag::before{content:'';width:32px;height:1px;background:var(--or);}
+.s8-hero h1{font-family:var(--f-serif);font-weight:400;font-size:clamp(3.5rem,9vw,12rem);line-height:.92;letter-spacing:-.02em;color:var(--creme);opacity:0;animation:fadeUp 1.2s .35s ease forwards;}
+.s8-hero h1 em{font-style:italic;font-weight:400;color:var(--or-pale);}
+.s8-hero-sub-row{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:40px;padding-top:28px;border-top:1px solid var(--or-line);opacity:0;animation:fadeUp .9s .65s ease forwards;}
+.s8-hero-desc{font-family:var(--f-sans);font-size:.84rem;font-weight:300;color:rgba(245,239,232,.45);line-height:2;max-width:440px;}
+.s8-prix-bloc{display:flex;gap:0;flex-shrink:0;}
+.s8-prix-item{padding:14px 24px;border:1px solid var(--or-line);display:flex;flex-direction:column;gap:3px;margin-left:-1px;}
+.s8-prix-lbl{font-family:var(--f-sans);font-size:.46rem;font-weight:300;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,239,232,.3);}
+.s8-prix-val{font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:1.2rem;color:var(--or);line-height:1;}
+.s8-hero-btns{display:flex;gap:0;margin-top:20px;}
+.s8-btn-main{display:inline-block;background:var(--or);color:var(--nuit2);font-family:var(--f-sans);font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:16px 36px;border:1px solid var(--or);transition:all .35s;}
+.s8-btn-main:hover{background:transparent;color:var(--or);}
+.s8-btn-sec{display:inline-block;background:transparent;color:rgba(245,239,232,.4);font-family:var(--f-sans);font-size:.6rem;font-weight:300;letter-spacing:.2em;text-transform:uppercase;padding:16px 28px;border:1px solid rgba(245,239,232,.15);transition:all .35s;margin-left:-1px;}
+.s8-btn-sec:hover{border-color:rgba(245,239,232,.5);color:var(--creme);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:none;}}
+@media(max-width:768px){.s8-hero h1{font-size:clamp(3rem,13vw,6rem);}.s8-hero-sub-row{flex-direction:column;align-items:flex-start;}.s8-prix-bloc{flex-wrap:wrap;}.s8-hero-btns{flex-direction:column;width:100%;}.s8-btn-main,.s8-btn-sec{text-align:center;margin-left:0;margin-top:-1px;}}
+
+.s8-label{display:inline-flex;align-items:center;gap:14px;font-family:var(--f-sans);font-size:.54rem;font-weight:400;letter-spacing:.3em;text-transform:uppercase;color:var(--or);margin-bottom:24px;}
+.s8-label::before{content:'';width:28px;height:1px;background:var(--or);}
+.s8-h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(2.2rem,4.5vw,6rem);line-height:.96;letter-spacing:-.02em;color:var(--creme);}
+.s8-h2 em{font-style:italic;font-weight:400;color:var(--or-pale);}
+.s8-p{font-family:var(--f-sans);font-size:.86rem;font-weight:300;color:rgba(245,239,232,.55);line-height:2.1;margin-bottom:14px;}
+
+/* S1 DESC */
+.s8-desc{position:relative;min-height:80vh;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
+.s8-desc-img{position:relative;overflow:hidden;}
+.s8-desc-photo{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.7) saturate(.9);transition:transform 14s ease;}
+.s8-desc:hover .s8-desc-photo{transform:scale(1.04);}
+.s8-desc-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(45,27,40,0) 0%,rgba(45,27,40,.55) 100%);}
+.s8-desc-txt{background:var(--nuit);display:flex;flex-direction:column;justify-content:center;padding:80px 72px;}
+.s8-citation{font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:clamp(1.1rem,1.8vw,1.6rem);line-height:1.6;color:var(--or-pale);padding-left:20px;border-left:1px solid var(--or);margin:24px 0;}
+@media(max-width:860px){.s8-desc{grid-template-columns:1fr;min-height:auto;}.s8-desc-img{min-height:70vw;}.s8-desc-txt{padding:56px 6%;}}
+
+/* BIENFAITS */
+.s8-bienfaits{background:var(--nuit2);padding:0 6%;}
+.s8-bienfaits-inner{max-width:var(--max);margin:0 auto;}
+.s8-bienfaits-header{padding:80px 0 56px;border-bottom:1px solid var(--or-line);}
+.s8-bienfaits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;}
+.s8-bienfait{padding:48px 32px;border-right:1px solid var(--or-line);border-bottom:1px solid var(--or-line);display:flex;flex-direction:column;gap:12px;transition:background .3s;}
+.s8-bienfait:nth-child(3n){border-right:none;}
+.s8-bienfait:nth-last-child(-n+3){border-bottom:none;}
+.s8-bienfait:hover{background:rgba(200,155,140,.04);}
+.s8-bienfait-num{font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:4rem;line-height:1;color:rgba(200,155,140,.1);margin-bottom:-12px;}
+.s8-bienfait-titre{font-family:var(--f-sans);font-size:.82rem;font-weight:500;color:var(--creme);}
+.s8-bienfait-txt{font-family:var(--f-sans);font-size:.78rem;font-weight:300;color:rgba(245,239,232,.45);line-height:2.1;}
+.s8-mention{font-family:var(--f-sans);font-size:.7rem;font-style:italic;color:rgba(245,239,232,.25);padding:20px 0;border-top:1px solid var(--or-line);}
+@media(max-width:760px){.s8-bienfaits-grid{grid-template-columns:1fr 1fr;}.s8-bienfait:nth-child(2n){border-right:none;}}
+@media(max-width:480px){.s8-bienfaits-grid{grid-template-columns:1fr;}.s8-bienfait{border-right:none;}}
+
+/* DÉROULEMENT */
+.s8-deroul{position:relative;overflow:hidden;padding:0 6%;}
+.s8-deroul-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.15) saturate(.55);}
+.s8-deroul-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;padding:100px 0;align-items:start;}
+.s8-etapes{display:flex;flex-direction:column;gap:0;margin-top:32px;}
+.s8-etape{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid rgba(200,155,140,.12);}
+.s8-etape:last-child{border-bottom:none;}
+.s8-etape-num{width:36px;height:36px;background:var(--or);display:flex;align-items:center;justify-content:center;font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:.9rem;color:var(--nuit2);flex-shrink:0;}
+.s8-etape-titre{font-family:var(--f-sans);font-size:.82rem;font-weight:500;color:var(--creme);margin-bottom:4px;}
+.s8-etape-txt{font-family:var(--f-sans);font-size:.78rem;font-weight:300;color:rgba(245,239,232,.45);line-height:2;}
+.s8-a-prevoir{background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--or-line);padding:32px;margin-top:28px;}
+.s8-a-prevoir-titre{font-family:var(--f-sans);font-size:.54rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--or);margin-bottom:16px;}
+.s8-a-prevoir-item{display:flex;align-items:flex-start;gap:12px;padding:8px 0;border-bottom:1px solid rgba(200,155,140,.1);font-family:var(--f-sans);font-size:.78rem;font-weight:300;color:rgba(245,239,232,.5);}
+.s8-a-prevoir-item:last-child{border-bottom:none;}
+.s8-a-prevoir-item::before{content:'·';color:var(--or);flex-shrink:0;margin-top:1px;}
+@media(max-width:768px){.s8-deroul-inner{grid-template-columns:1fr;gap:48px;padding:64px 0;}}
+
+/* INDICATIONS */
+.s8-indi{background:var(--nuit);padding:0 6%;}
+.s8-indi-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:0;padding:80px 0;}
+.s8-indi-col{padding:0 56px 0 0;border-right:1px solid var(--or-line);}
+.s8-indi-col:last-child{border-right:none;padding:0 0 0 56px;}
+.s8-indi-titre{font-family:var(--f-sans);font-size:.54rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--or);margin-bottom:24px;display:flex;align-items:center;gap:12px;}
+.s8-indi-titre::before{content:'';width:20px;height:1px;background:var(--or);}
+.s8-indi-item{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid rgba(200,155,140,.08);font-family:var(--f-sans);font-size:.8rem;font-weight:300;color:rgba(245,239,232,.45);line-height:1.7;}
+.s8-indi-item:last-child{border-bottom:none;}
+.s8-indi-item::before{content:'·';color:var(--or);flex-shrink:0;margin-top:2px;}
+.s8-ci-note{font-family:var(--f-sans);font-size:.72rem;font-style:italic;color:rgba(245,239,232,.25);margin-top:16px;}
+@media(max-width:640px){.s8-indi-inner{grid-template-columns:1fr;padding:56px 0;}.s8-indi-col{border-right:none;padding:0;border-bottom:1px solid var(--or-line);padding-bottom:40px;}.s8-indi-col:last-child{border-bottom:none;padding:40px 0 0;}}
+
+/* TÉMOIGNAGES */
+.s8-temo{position:relative;overflow:hidden;padding:0 6%;}
+.s8-temo-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.2) saturate(.65);}
+.s8-temo-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;padding:100px 0;}
+.s8-temo-header{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;padding-bottom:48px;border-bottom:1px solid var(--or-line);margin-bottom:64px;}
+.s8-temo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;}
+.s8-temo-card{padding:40px 32px;border-right:1px solid var(--or-line);}
+.s8-temo-card:last-child{border-right:none;}
+.s8-temo-stars{display:flex;gap:3px;margin-bottom:20px;}
+.s8-temo-star{width:9px;height:9px;background:var(--or);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.s8-temo-txt{font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:1.05rem;color:var(--creme);line-height:1.9;margin-bottom:28px;}
+.s8-temo-sep{width:20px;height:1px;background:var(--or);margin-bottom:16px;}
+.s8-temo-author{font-family:var(--f-sans);font-size:.54rem;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:rgba(245,239,232,.4);}
+@media(max-width:760px){.s8-temo-header{grid-template-columns:1fr;}.s8-temo-grid{grid-template-columns:1fr;}.s8-temo-card{border-right:none;border-bottom:1px solid var(--or-line);}.s8-temo-card:last-child{border-bottom:none;}}
+
+/* PRATICIENNE */
+.s8-prat{position:relative;min-height:80vh;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
+.s8-prat-photo-wrap{position:relative;overflow:hidden;}
+.s8-prat-photo{position:absolute;inset:0;background-size:cover;background-position:center top;filter:brightness(.7) saturate(.9);transition:transform 14s ease;}
+.s8-prat:hover .s8-prat-photo{transform:scale(1.04);}
+.s8-prat-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(45,27,40,0) 0%,rgba(45,27,40,.6) 100%);}
+.s8-prat-txt{background:var(--nuit2);display:flex;flex-direction:column;justify-content:center;padding:72px 64px;}
+.s8-prat-nom{font-family:var(--f-serif);font-weight:400;font-style:italic;font-size:clamp(2rem,3.5vw,4.5rem);line-height:.98;color:var(--creme);margin-bottom:8px;}
+.s8-prat-titre{font-family:var(--f-sans);font-size:.54rem;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--or);margin-bottom:28px;}
+.s8-prat-certifs{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--or-line);margin-bottom:28px;}
+.s8-prat-certif{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(200,155,140,.08);font-family:var(--f-sans);font-size:.74rem;font-weight:300;color:rgba(245,239,232,.4);}
+.s8-prat-certif::before{content:'';width:4px;height:4px;background:var(--or);flex-shrink:0;border-radius:50%;}
+@media(max-width:860px){.s8-prat{grid-template-columns:1fr;min-height:auto;}.s8-prat-photo-wrap{min-height:70vw;}.s8-prat-txt{padding:56px 6%;}}
+
+/* MARQUEE */
+.s8-marquee{background:var(--or);padding:16px 0;overflow:hidden;border-top:1px solid rgba(200,155,140,.4);border-bottom:1px solid rgba(200,155,140,.4);}
+.s8-marquee-track{display:flex;animation:marquee 28s linear infinite;width:max-content;}
+.s8-marquee-item{display:flex;align-items:center;gap:28px;padding:0 36px;white-space:nowrap;font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:1.05rem;color:var(--nuit2);}
+.s8-marquee-item strong{font-style:normal;font-weight:500;}
+.s8-marquee-sep{font-family:var(--f-serif);font-size:1rem;color:rgba(45,27,40,.4);}
+@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* FAQ */
+.s8-faq{background:var(--nuit);padding:0 6%;}
+.s8-faq-inner{max-width:var(--max);margin:0 auto;padding:100px 0;}
+.s8-faq-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:80px;align-items:start;}
+details.s8-faq-item{border-bottom:1px solid rgba(200,155,140,.15);}
+details.s8-faq-item:first-of-type{border-top:1px solid rgba(200,155,140,.15);}
+details.s8-faq-item summary{padding:20px 0;cursor:none;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:var(--f-serif);font-weight:400;font-style:italic;font-size:1rem;color:var(--creme);line-height:1.5;transition:color .25s;}
+details.s8-faq-item summary::-webkit-details-marker{display:none;}
+details.s8-faq-item summary::after{content:'＋';font-family:var(--f-serif);font-size:1.2rem;color:var(--or);flex-shrink:0;transition:transform .35s;line-height:1;font-style:normal;}
+details.s8-faq-item[open] summary::after{transform:rotate(45deg);}
+details.s8-faq-item[open] summary{color:var(--or-pale);}
+.s8-faq-ans{padding:0 0 20px;font-family:var(--f-sans);font-size:.82rem;font-weight:300;color:rgba(245,239,232,.5);line-height:2.1;}
+.s8-faq-ans a{color:var(--or);}
+@media(max-width:768px){.s8-faq-layout{grid-template-columns:1fr;gap:40px;}}
+
+/* AUTRES SOINS */
+.s8-autres{background:var(--nuit2);padding:0 6%;}
+.s8-autres-inner{max-width:var(--max);margin:0 auto;padding:80px 0;}
+.s8-autres-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--or-line);margin-top:48px;}
+.s8-autre{padding:32px 28px;border-right:1px solid var(--or-line);display:flex;flex-direction:column;gap:10px;text-decoration:none;transition:background .3s;}
+.s8-autre:last-child{border-right:none;}
+.s8-autre:hover{background:rgba(200,155,140,.04);}
+.s8-autre-nom{font-family:var(--f-serif);font-weight:400;font-size:1.3rem;color:var(--creme);}
+.s8-autre-desc{font-family:var(--f-sans);font-size:.76rem;font-weight:300;color:rgba(245,239,232,.4);line-height:1.9;flex:1;}
+.s8-autre-arrow{font-family:var(--f-sans);font-size:.6rem;color:rgba(200,155,140,.6);transition:all .3s;letter-spacing:.1em;text-transform:uppercase;}
+.s8-autre:hover .s8-autre-arrow{color:var(--or);transform:translateX(4px);}
+@media(max-width:640px){.s8-autres-grid{grid-template-columns:1fr;}.s8-autre{border-right:none;border-bottom:1px solid var(--or-line);}.s8-autre:last-child{border-bottom:none;}}
+
+/* CTA */
+.s8-cta{position:relative;min-height:70vh;display:flex;align-items:center;overflow:hidden;padding:0 6%;}
+.s8-cta-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.28) saturate(.75);transform:scale(1.04);transition:transform 16s ease;}
+.s8-cta:hover .s8-cta-bg{transform:scale(1);}
+.s8-cta-inner{position:relative;z-index:2;max-width:var(--max);margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.s8-cta-h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(3rem,7vw,9rem);line-height:.92;letter-spacing:-.02em;color:var(--creme);}
+.s8-cta-h2 em{font-style:italic;color:var(--or-pale);}
+.s8-cta-right{display:flex;flex-direction:column;gap:20px;}
+.s8-cta-sub{font-family:var(--f-sans);font-size:.84rem;font-weight:300;color:rgba(245,239,232,.4);line-height:2;}
+@media(max-width:768px){.s8-cta-inner{grid-template-columns:1fr;gap:40px;}}
+
+.s8-maillage{background:var(--nuit2);padding:32px 6%;border-top:1px solid var(--or-line);}
+.s8-maillage-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.s8-maillage-lbl{font-family:var(--f-sans);font-size:.5rem;font-weight:400;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,239,232,.25);margin-right:8px;white-space:nowrap;}
+.s8-maillage-pill{display:inline-block;padding:6px 16px;border:1px solid rgba(200,155,140,.18);color:rgba(245,239,232,.35);font-family:var(--f-sans);font-size:.64rem;font-weight:300;transition:all .25s;}
+.s8-maillage-pill:hover{border-color:var(--or);color:var(--or);}
+
+.s8-reveal{opacity:0;transform:translateY(30px);transition:opacity 1s ease,transform 1s ease;}.s8-reveal.in{opacity:1;transform:none;}
+.s8-reveal-left{opacity:0;transform:translateX(-30px);transition:opacity 1s ease,transform 1s ease;}.s8-reveal-left.in{opacity:1;transform:none;}
+.s8-reveal-right{opacity:0;transform:translateX(30px);transition:opacity 1s ease,transform 1s ease;}.s8-reveal-right.in{opacity:1;transform:none;}
+.s8-d1{transition-delay:.1s;}.s8-d2{transition-delay:.2s;}.s8-d3{transition-delay:.3s;}
+</style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="s8-sticky">
+  <div class="s8-sticky-id"><strong>Thalasso Bain bébé</strong> — Léna Marchetti · Lyon</div>
+  <div class="s8-sticky-btns">
+    <a href="#" target="_blank" rel="noopener" class="s8-btn-sticky">Offrir ce soin</a>
+    <a href="#" target="_blank" rel="noopener" class="s8-btn-sticky-cta">Réserver ce soin</a>
+  </div>
+</div>
+
+<main>
+
+<section class="s8-hero" aria-label="Thalasso Bain bébé à Lyon">
+  <div class="s8-hero-bg" id="heroBg" style="background-image:url('https://www.instanttoodoux.fr/wp-content/uploads/2023/07/Elio_-5-768x512.jpg')"></div>
+  <div class="s8-hero-overlay"></div>
+  <div class="s8-hero-inner">
+    <nav class="s8-hero-breadcrumb" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a><span>›</span><a href="/accompagnements">Accompagnements</a><span>›</span><span>Thalasso Bain bébé</span>
+    </nav>
+    <div class="s8-hero-tag">Accompagnante périnatale · Lyon</div>
+    <h1>Réservez votre<br><em>Thalasso Bain bébé</em><br>à Lyon</h1>
+    <div class="s8-hero-sub-row">
+      <p class="s8-hero-desc">Un rituel aquatique né en France il y a vingt ans, qui réveille les sensations prénatales de votre bébé et tisse un lien d'une rare intensité.</p>
+      <div class="s8-prix-bloc">
+        <div class="s8-prix-item"><span class="s8-prix-lbl">Tarif</span><span class="s8-prix-val">120 €</span></div>
+        <div class="s8-prix-item"><span class="s8-prix-lbl">Durée</span><span class="s8-prix-val">1h</span></div>
+        <div class="s8-prix-item"><span class="s8-prix-lbl">Lieu</span><span class="s8-prix-val">Lyon 2e</span></div>
+      </div>
+    </div>
+    <div class="s8-hero-btns">
+      <a href="#" target="_blank" rel="noopener" class="s8-btn-main">Réserver ce soin</a>
+      <a href="#" target="_blank" rel="noopener" class="s8-btn-sec">Offrir ce soin</a>
+    </div>
+  </div>
+</section>
+
+
+<div class="s8-desc s8-reveal">
+  <div class="s8-desc-img">
+    <div class="s8-desc-photo" style="background-image:url('https://media.istockphoto.com/id/2158835167/fr/photo/gros-plan-petite-main-denfant-bébé-tenant-la-main-de-la-mère-un-nouveau-né-tient-le-doigt-de.jpg?s=612x612&w=0&k=20&c=09LlXEZ3kLJmVYL_sKmvfFpvShPtErXuveV-B0yOZS4=')"></div>
+    <div class="s8-desc-overlay"></div>
+  </div>
+  <div class="s8-desc-txt">
+    <div class="s8-label">Le soin</div>
+    <h2 class="s8-h2" style="margin-bottom:24px;">En quoi consiste<br><em>le Thalasso Bain bébé à Lyon ?</em></h2>
+    <p class="s8-p">Né en France à la fin des années 90 sous l'impulsion de Sonia Rochel, le Thalasso Bain bébé est un rituel aquatique inspiré des sensations prénatales. Dans une eau portée à 37°C et enrichie d'arômes floraux, votre nouveau-né retrouve l'apesanteur, les bruits étouffés et l'enveloppement du liquide amniotique. Ce n'est ni un bain, ni un massage. C'est une parenthèse de retour à soi, pour lui comme pour vous.</p>
+    <p class="s8-p">Ce rituel s'adresse aux bébés de 8 jours à 3 mois, idéalement avant l'installation des pleurs du soir. Il est particulièrement indiqué pour les naissances vécues comme intenses ou traumatiques, les bébés qui peinent à trouver le sommeil, et les parents en quête d'un moment suspendu avec leur enfant.</p>
+    <blockquote class="s8-citation">
+      « Ici, on ne corrige pas le bébé. On l'écoute, simplement. Et on laisse le lien se tisser. »<br>
+      <cite style="font-family:var(--f-sans);font-style:normal;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,239,232,.4);">— Léna Marchetti</cite>
+    </blockquote>
+  </div>
+</div>
+
+
+<div class="s8-bienfaits s8-reveal">
+  <div class="s8-bienfaits-inner">
+    <div class="s8-bienfaits-header">
+      <div class="s8-label">Les bienfaits</div>
+      <h2 class="s8-h2">Ce que le Thalasso Bain bébé<br><em>peut apporter à votre enfant</em></h2>
+    </div>
+    <div class="s8-bienfaits-grid">
+      <div class="s8-bienfait s8-d1">
+        <span class="s8-bienfait-num" aria-hidden="true">01</span>
+        <div class="s8-bienfait-titre">Un sommeil apaisé</div>
+        <p class="s8-bienfait-txt">La grande majorité des bébés s'endorment profondément après la séance, et retrouvent un rythme de sommeil plus stable dans les jours qui suivent.</p>
+      </div>
+      <div class="s8-bienfait s8-d2">
+        <span class="s8-bienfait-num" aria-hidden="true">02</span>
+        <div class="s8-bienfait-titre">Une digestion facilitée</div>
+        <p class="s8-bienfait-txt">La flottaison et les mouvements doux détendent le ventre, soulagent les coliques et régulent le transit des premières semaines.</p>
+      </div>
+      <div class="s8-bienfait s8-d3">
+        <span class="s8-bienfait-num" aria-hidden="true">03</span>
+        <div class="s8-bienfait-titre">Un lien parent-enfant renforcé</div>
+        <p class="s8-bienfait-txt">Vous assistez à la séance, vous touchez, vous parlez, vous recevez votre bébé à la sortie. Un moment fondateur.</p>
+      </div>
+      <div class="s8-bienfait s8-d1">
+        <span class="s8-bienfait-num" aria-hidden="true">04</span>
+        <div class="s8-bienfait-titre">Une libération émotionnelle</div>
+        <p class="s8-bienfait-txt">Pour les bébés dont la naissance a été difficile, l'eau permet souvent d'évacuer des tensions physiques et émotionnelles retenues.</p>
+      </div>
+      <div class="s8-bienfait s8-d2">
+        <span class="s8-bienfait-num" aria-hidden="true">05</span>
+        <div class="s8-bienfait-titre">Une éveil sensoriel doux</div>
+        <p class="s8-bienfait-txt">L'eau, la chaleur, les arômes floraux, la lumière tamisée : une stimulation multi-sensorielle fine, jamais agressive.</p>
+      </div>
+      <div class="s8-bienfait s8-d3">
+        <span class="s8-bienfait-num" aria-hidden="true">06</span>
+        <div class="s8-bienfait-titre">Un temps pour les parents</div>
+        <p class="s8-bienfait-txt">Au-delà du bébé, c'est un rituel qui permet aux jeunes parents de ralentir, de se reconnecter à leur enfant autrement qu'à travers le soin.</p>
+      </div>
+    </div>
+    <p class="s8-mention s8-reveal">Ce rituel ne se substitue pas à un suivi médical ni à un accompagnement psychologique. En cas d'inquiétude concernant votre bébé, consultez votre médecin ou votre sage-femme.</p>
+  </div>
+</div>
+
+
+<div class="s8-deroul s8-reveal">
+  <div class="s8-deroul-bg" style="background-image:url('https://www.neufmois.fr/wp-content/uploads/2015/01/pieds-de-bébé.jpg')"></div>
+  <div class="s8-deroul-inner">
+    <div class="s8-reveal-left">
+      <div class="s8-label">Le déroulement</div>
+      <h2 class="s8-h2" style="margin-bottom:12px;">Comment se déroule<br><em>votre séance ?</em></h2>
+      <p class="s8-p">Une heure au total, dans un cabinet feutré du 2ᵉ arrondissement de Lyon. Votre bébé et vous êtes seuls avec moi. La séance suit un rythme lent, guidé par ce que votre enfant demande.</p>
+      <div class="s8-etapes">
+        <div class="s8-etape">
+          <div class="s8-etape-num">1</div>
+          <div>
+            <div class="s8-etape-titre">L'accueil</div>
+            <p class="s8-etape-txt">Nous faisons connaissance. Vous me racontez la naissance, les premières semaines, ce qui vous amène. Je prépare le bain pendant que votre bébé s'adapte à la pièce.</p>
+          </div>
+        </div>
+        <div class="s8-etape">
+          <div class="s8-etape-num">2</div>
+          <div>
+            <div class="s8-etape-titre">L'immersion</div>
+            <p class="s8-etape-txt">Bébé est doucement plongé dans une eau à 37°C. Il retrouve immédiatement les sensations connues de la vie utérine : la flottaison, l'enveloppement, la chaleur.</p>
+          </div>
+        </div>
+        <div class="s8-etape">
+          <div class="s8-etape-num">3</div>
+          <div>
+            <div class="s8-etape-titre">Le rituel aquatique</div>
+            <p class="s8-etape-txt">Les arômes floraux sont déposés à la surface. Bébé flotte, bouge, se détend. Vous êtes juste à côté, vous lui parlez, vous posez la main sur son corps.</p>
+          </div>
+        </div>
+        <div class="s8-etape">
+          <div class="s8-etape-num">4</div>
+          <div>
+            <div class="s8-etape-titre">Le retour</div>
+            <p class="s8-etape-txt">Vous recevez votre bébé à la sortie de l'eau dans un grand drap chaud. Un moment peau à peau, souvent très émouvant. La séance se termine par un temps d'échange.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s8-reveal-right">
+      <div class="s8-a-prevoir">
+        <div class="s8-a-prevoir-titre">À prévoir pour votre séance</div>
+        <div class="s8-a-prevoir-item">Votre bébé doit être né à terme, avoir entre 8 jours et 3 mois, cordon ombilical cicatrisé.</div>
+        <div class="s8-a-prevoir-item">Prévoyez une couche, un change complet et une tétée/biberon possible en fin de séance.</div>
+        <div class="s8-a-prevoir-item">Venez idéalement deux parents : l'un porte, l'autre observe et photographie si vous le souhaitez.</div>
+        <div class="s8-a-prevoir-item">Arrivez 10 minutes en avance. La séance démarre à l'heure, le rythme du bébé dicte la suite.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="s8-indi s8-reveal">
+  <div class="s8-indi-inner">
+    <div class="s8-indi-col">
+      <div class="s8-indi-titre">Pour qui ?</div>
+      <div class="s8-indi-item">Bébés de 8 jours à 3 mois, nés à terme, cordon cicatrisé</div>
+      <div class="s8-indi-item">Nouveau-nés agités, en difficulté pour trouver le sommeil</div>
+      <div class="s8-indi-item">Bébés présentant des coliques ou des tensions digestives</div>
+      <div class="s8-indi-item">Naissances intenses, par césarienne ou vécues comme traumatiques</div>
+      <div class="s8-indi-item">Parents qui souhaitent créer un moment rituel fondateur</div>
+    </div>
+    <div class="s8-indi-col">
+      <div class="s8-indi-titre">Contre-indications</div>
+      <div class="s8-indi-item">Prématurité ou poids de naissance inférieur à 2,5 kg</div>
+      <div class="s8-indi-item">Cordon ombilical non cicatrisé</div>
+      <div class="s8-indi-item">Fièvre, bronchiolite, infection cutanée en cours</div>
+      <div class="s8-indi-item">Pathologies cardiaques ou neurologiques néonatales non stabilisées</div>
+      <p class="s8-ci-note">En cas de doute, contactez <a href="tel:+33478000000" style="color:var(--or);">Léna</a> avant de réserver. Un simple échange téléphonique permet d'évaluer la faisabilité.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="s8-temo s8-reveal">
+  <div class="s8-temo-bg" style="background-image:url('https://www.instanttoodoux.fr/wp-content/uploads/2023/07/Elio_-5-768x512.jpg')"></div>
+  <div class="s8-temo-inner">
+    <div class="s8-temo-header">
+      <div>
+        <div class="s8-label">Témoignages</div>
+        <h2 class="s8-h2">Ce qu'elles disent<br><em>de ce rituel</em></h2>
+      </div>
+      <a href="#" target="_blank" rel="noopener" style="display:inline-block;background:transparent;color:var(--or);font-family:var(--f-sans);font-size:.6rem;font-weight:300;letter-spacing:.24em;text-transform:uppercase;padding:14px 28px;border:1px solid var(--or-line);transition:all .35s;text-decoration:none;width:fit-content;align-self:flex-end;">4.9 ★ · Avis Google →</a>
+    </div>
+    <div class="s8-temo-grid">
+      <article class="s8-temo-card s8-reveal s8-d1">
+        <div class="s8-temo-stars"><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span></div>
+        <p class="s8-temo-txt">« Mon fils de trois semaines dormait très mal depuis sa naissance par césarienne. Après la séance avec Léna, il a dormi cinq heures d'affilée. Six mois plus tard, nous parlons encore de ce moment. »</p>
+        <div class="s8-temo-sep"></div>
+        <span class="s8-temo-author">Élodie B. · Thalasso bain bébé</span>
+      </article>
+      <article class="s8-temo-card s8-reveal s8-d2">
+        <div class="s8-temo-stars"><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span></div>
+        <p class="s8-temo-txt">« Léna est d'une justesse rare. Elle a su voir notre bébé, mais aussi nous, parents épuisés. Le bain a été un moment suspendu. Une vraie leçon d'écoute. »</p>
+        <div class="s8-temo-sep"></div>
+        <span class="s8-temo-author">Claire et Julien M. · Thalasso bain bébé</span>
+      </article>
+      <article class="s8-temo-card s8-reveal s8-d3">
+        <div class="s8-temo-stars"><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span><span class="s8-temo-star"></span></div>
+        <p class="s8-temo-txt">« Je cherchais un accompagnement autre que l'hôpital. Avec Léna, j'ai trouvé une présence féminine qui honore ce qu'on vit vraiment quand on devient mère. Précieux. »</p>
+        <div class="s8-temo-sep"></div>
+        <span class="s8-temo-author">Marion D. · Thalasso bain bébé</span>
+      </article>
+    </div>
+  </div>
+</div>
+
+
+<div class="s8-prat s8-reveal">
+  <div class="s8-prat-photo-wrap">
+    <div class="s8-prat-photo" style="background-image:url('https://images.unsplash.com/photo-1580489944761-15a19d654956?w=1200&q=80')"></div>
+    <div class="s8-prat-overlay"></div>
+  </div>
+  <div class="s8-prat-txt">
+    <div class="s8-label">La praticienne</div>
+    <div class="s8-prat-nom">Léna<br><em>Marchetti</em></div>
+    <div class="s8-prat-titre">Sage-femme & accompagnante périnatale · Lyon depuis 12 ans</div>
+    <p class="s8-p">Sage-femme diplômée d'État, j'ai exercé huit ans en maternité avant de me consacrer à l'accompagnement périnatal en cabinet privé. Ce qui m'anime, c'est le lien : entre la mère et son bébé, entre deux parents, entre ce qui a été vécu et ce qui commence.</p>
+    <p class="s8-p">Je reçois les familles dans un cabinet feutré du quartier Ainay, à Lyon 2ᵉ. Je me déplace aussi à domicile pour l'accompagnement post-naissance, dans Lyon et sa périphérie.</p>
+    <div class="s8-prat-certifs">
+      <div class="s8-prat-certif">Diplôme d'État de sage-femme · 2013</div>
+      <div class="s8-prat-certif">Thalasso Bain bébé méthode Sonia Rochel · Paris · 2019</div>
+      <div class="s8-prat-certif">Haptonomie périnatale · Institut CIRDH</div>
+      <div class="s8-prat-certif">Massage bébé certifié AFMB</div>
+    </div>
+    <a href="#" style="display:inline-block;background:transparent;color:var(--or);font-family:var(--f-sans);font-size:.6rem;font-weight:300;letter-spacing:.24em;text-transform:uppercase;padding:14px 28px;border:1px solid var(--or-line);transition:all .35s;text-decoration:none;width:fit-content;">Découvrir son parcours</a>
+  </div>
+</div>
+
+
+<div class="s8-marquee" aria-hidden="true">
+  <div class="s8-marquee-track">
+    <div class="s8-marquee-item"><strong>Thalasso Bain bébé</strong><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item"><em>Lyon</em><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item"><strong>Léna Marchetti</strong><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item">120 €<span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item"><em>1 heure</em><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item">Réservation en ligne<span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item"><strong>Thalasso Bain bébé</strong><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item"><em>Lyon</em><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item"><strong>Léna Marchetti</strong><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item">120 €<span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item"><em>1 heure</em><span class="s8-marquee-sep">·</span></div>
+    <div class="s8-marquee-item">Réservation en ligne<span class="s8-marquee-sep">·</span></div>
+  </div>
+</div>
+
+
+<div class="s8-faq">
+  <div class="s8-faq-inner">
+    <div class="s8-faq-layout">
+      <div class="s8-reveal-left">
+        <div class="s8-label">FAQ</div>
+        <h2 class="s8-h2" style="margin-bottom:24px;">Vos questions sur<br><em>le Thalasso Bain bébé à Lyon</em></h2>
+        <a href="#" style="display:inline-block;background:transparent;color:var(--or);font-family:var(--f-sans);font-size:.6rem;font-weight:300;letter-spacing:.24em;text-transform:uppercase;padding:14px 28px;border:1px solid var(--or-line);transition:all .35s;text-decoration:none;margin-top:8px;">Toutes les questions</a>
+      </div>
+      <div class="s8-reveal-right">
+        <details class="s8-faq-item">
+          <summary>En quoi consiste le Thalasso Bain bébé à Lyon ?</summary>
+          <div class="s8-faq-ans">
+            <p>C'est un rituel aquatique créé par Sonia Rochel au début des années 2000. Votre bébé est plongé dans une eau à 37°C enrichie d'arômes floraux, pour une séance d'une heure qui recrée les sensations de la vie utérine : flottaison, enveloppement, chaleur. Ce n'est ni un bain ordinaire, ni un massage. C'est un temps rituel entre vous et votre enfant, en présence d'une accompagnante formée.</p>
+          </div>
+        </details>
+        <details class="s8-faq-item">
+          <summary>Quel est le tarif à Lyon ?</summary>
+          <div class="s8-faq-ans">
+            <p>La séance de Thalasso Bain bébé est à 120 € pour 1 heure, au cabinet du 2ᵉ arrondissement de Lyon. Un forfait de 3 séances est proposé à 320 €. <a href="#">Réserver →</a></p>
+          </div>
+        </details>
+        <details class="s8-faq-item">
+          <summary>À quel âge mon bébé peut-il en bénéficier ?</summary>
+          <div class="s8-faq-ans">
+            <p>Idéalement entre 8 jours (une fois le cordon cicatrisé) et 3 mois. Passé cet âge, le bébé est plus éveillé et la magie du rituel prénatal fonctionne moins. C'est aussi pour cela que nous recommandons de réserver votre séance dès les dernières semaines de grossesse.</p>
+          </div>
+        </details>
+        <details class="s8-faq-item">
+          <summary>Y a-t-il des contre-indications ?</summary>
+          <div class="s8-faq-ans">
+            <p>Oui : prématurité, poids de naissance inférieur à 2,5 kg, cordon non cicatrisé, fièvre, bronchiolite, infection cutanée active, ou pathologies cardiaques/neurologiques non stabilisées. En cas de doute, contactez <a href="tel:+33478000000">Léna</a> avant de réserver.</p>
+          </div>
+        </details>
+        <details class="s8-faq-item">
+          <summary>Comment offrir ce rituel en cadeau à Lyon ?</summary>
+          <div class="s8-faq-ans">
+            <p>Une carte cadeau est disponible <a href="#">ici</a>. Code envoyé immédiatement par email. Valable un an. Un cadeau de naissance qui sort véritablement de l'ordinaire.</p>
+          </div>
+        </details>
+        <details class="s8-faq-item">
+          <summary>Comment réserver votre Thalasso Bain bébé à Lyon ?</summary>
+          <div class="s8-faq-ans">
+            <p>La réservation se fait en ligne 24h/24 sur <a href="#">ce lien</a>. Vous pouvez aussi me contacter directement au <a href="tel:+33478000000">04 78 00 00 00</a> si vous préférez échanger par téléphone avant de confirmer.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="s8-autres s8-reveal">
+  <div class="s8-autres-inner">
+    <div class="s8-label">À découvrir aussi</div>
+    <h2 class="s8-h2">Les autres accompagnements<br><em>de Léna à Lyon</em></h2>
+    <div class="s8-autres-grid">
+      <a href="#" class="s8-autre s8-reveal s8-d1">
+        <div class="s8-autre-nom">Massage bébé & guidance</div>
+        <p class="s8-autre-desc">Apprendre les gestes qui apaisent les coliques, le sommeil et renforcent le lien.</p>
+        <span class="s8-autre-arrow">Découvrir →</span>
+      </a>
+      <a href="#" class="s8-autre s8-reveal s8-d2">
+        <div class="s8-autre-nom">Accompagnement post-naissance</div>
+        <p class="s8-autre-desc">Une visite à domicile pour écouter, conseiller, rassurer dans les premiers jours.</p>
+        <span class="s8-autre-arrow">Découvrir →</span>
+      </a>
+      <a href="#" class="s8-autre s8-reveal s8-d3">
+        <div class="s8-autre-nom">Préparation à la naissance</div>
+        <p class="s8-autre-desc">Un cycle de séances en haptonomie pour préparer l'arrivée de votre enfant.</p>
+        <span class="s8-autre-arrow">Découvrir →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="s8-cta">
+  <div class="s8-cta-bg" style="background-image:url('https://media.istockphoto.com/id/2158835167/fr/photo/gros-plan-petite-main-denfant-bébé-tenant-la-main-de-la-mère-un-nouveau-né-tient-le-doigt-de.jpg?s=612x612&w=0&k=20&c=09LlXEZ3kLJmVYL_sKmvfFpvShPtErXuveV-B0yOZS4=')"></div>
+  <div class="s8-cta-inner s8-reveal">
+    <h2 class="s8-cta-h2">Honorez<br>ce qui<br><em>commence.</em></h2>
+    <div class="s8-cta-right">
+      <p class="s8-cta-sub">120 € · 1 heure · Lyon 2ᵉ · Réservation 24h/24</p>
+      <div style="display:flex;flex-direction:column;gap:0;width:fit-content;">
+        <a href="#" target="_blank" rel="noopener" style="display:block;background:var(--or);color:var(--nuit2);font-family:var(--f-sans);font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:18px 48px;border:1px solid var(--or);transition:all .35s;text-decoration:none;text-align:center;">Réserver ce soin</a>
+        <a href="#" target="_blank" rel="noopener" style="display:block;background:transparent;color:rgba(245,239,232,.4);font-family:var(--f-sans);font-size:.6rem;font-weight:300;letter-spacing:.2em;text-transform:uppercase;padding:18px 48px;border:1px solid rgba(245,239,232,.15);transition:all .35s;text-decoration:none;text-align:center;margin-top:-1px;">Offrir ce soin</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<nav class="s8-maillage" aria-label="Navigation thématique">
+  <div class="s8-maillage-inner">
+    <span class="s8-maillage-lbl">Explorer</span>
+    <a href="#" class="s8-maillage-pill">Thalasso bain bébé Lyon</a>
+    <a href="#" class="s8-maillage-pill">Massage bébé Lyon</a>
+    <a href="#" class="s8-maillage-pill">Tous les accompagnements</a>
+    <a href="#" class="s8-maillage-pill">À propos</a>
+    <a href="#" class="s8-maillage-pill">Questions fréquentes</a>
+    <a href="#" class="s8-maillage-pill">Cartes cadeaux</a>
+  </div>
+</nav>
+
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Thalasso Bain bébé à Lyon",
+    "description": "Rituel aquatique pour nouveau-nés de 8 jours à 3 mois, par Léna Marchetti, sage-femme et accompagnante périnatale à Lyon. Eau à 37°C, arômes floraux, enveloppement. 120€ pour 1 heure.",
+    "url": "https://lena-marchetti-perinatalite.fr/thalasso-bain-bebe-lyon",
+    "provider": {
+      "@type": "Person",
+      "name": "Léna Marchetti",
+      "jobTitle": "Sage-femme & accompagnante périnatale",
+      "url": "https://lena-marchetti-perinatalite.fr/a-propos"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Lyon"},
+      {"@type": "City", "name": "Villeurbanne"},
+      {"@type": "City", "name": "Caluire-et-Cuire"}
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "120",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://lena-marchetti-perinatalite.fr/reserver"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "64",
+      "bestRating": "5"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"En quoi consiste le Thalasso Bain bébé à Lyon ?","acceptedAnswer":{"@type":"Answer","text":"C'est un rituel aquatique créé par Sonia Rochel, qui plonge votre bébé dans une eau à 37°C enrichie d'arômes floraux pendant une heure. Il recrée les sensations de la vie utérine : flottaison, enveloppement, chaleur."}},
+      {"@type":"Question","name":"Quel est le tarif à Lyon ?","acceptedAnswer":{"@type":"Answer","text":"120 € pour 1 heure. Un forfait de 3 séances est proposé à 320 €."}},
+      {"@type":"Question","name":"À quel âge mon bébé peut-il en bénéficier ?","acceptedAnswer":{"@type":"Answer","text":"Entre 8 jours (cordon cicatrisé) et 3 mois."}},
+      {"@type":"Question","name":"Y a-t-il des contre-indications ?","acceptedAnswer":{"@type":"Answer","text":"Prématurité, poids de naissance inférieur à 2,5 kg, cordon non cicatrisé, fièvre, bronchiolite, infection cutanée, pathologies cardiaques ou neurologiques non stabilisées."}},
+      {"@type":"Question","name":"Comment réserver votre Thalasso Bain bébé à Lyon ?","acceptedAnswer":{"@type":"Answer","text":"En ligne 24h/24 sur lena-marchetti-perinatalite.fr/reserver ou par téléphone au 04 78 00 00 00."}}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://lena-marchetti-perinatalite.fr/"},
+      {"@type":"ListItem","position":2,"name":"Accompagnements","item":"https://lena-marchetti-perinatalite.fr/accompagnements"},
+      {"@type":"ListItem","position":3,"name":"Thalasso Bain bébé à Lyon","item":"https://lena-marchetti-perinatalite.fr/thalasso-bain-bebe-lyon"}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Léna Marchetti — Accompagnement périnatal",
+    "description": "Sage-femme et accompagnante périnatale à Lyon. Thalasso Bain bébé, massage bébé, préparation à la naissance, accompagnement post-partum.",
+    "url": "https://lena-marchetti-perinatalite.fr",
+    "telephone": "+33478000000",
+    "priceRange": "€€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "64",
+      "bestRating": "5"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8 rue Auguste Comte",
+      "addressLocality": "Lyon",
+      "postalCode": "69002",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "45.7578",
+      "longitude": "4.8320"
+    }
+  }
+]
+</script>
+
+<script>
+(function(){var c=document.getElementById('cursor'),r=document.getElementById('cursorRing');if(!c||!r)return;var mx=0,my=0,rx=0,ry=0;document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;c.style.left=mx+'px';c.style.top=my+'px';});(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;r.style.left=rx+'px';r.style.top=ry+'px';requestAnimationFrame(loop);})();document.querySelectorAll('a,button,details summary').forEach(function(el){el.addEventListener('mouseenter',function(){r.style.width='56px';r.style.height='56px';r.style.borderColor='rgba(200,155,140,.8)';});el.addEventListener('mouseleave',function(){r.style.width='36px';r.style.height='36px';r.style.borderColor='rgba(200,155,140,.5)';});});})();
+(function(){var bg=document.getElementById('heroBg');if(bg)setTimeout(function(){bg.classList.add('loaded');},80);})();
+(function(){var io=new IntersectionObserver(function(e){e.forEach(function(n){if(n.isIntersecting){n.target.classList.add('in');io.unobserve(n.target);}});},{threshold:.08});document.querySelectorAll('.s8-reveal,.s8-reveal-left,.s8-reveal-right').forEach(function(el){io.observe(el);});})();
+</script>
+
+</body>
+</html>
