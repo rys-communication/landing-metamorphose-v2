@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kobido à Aix-en-Provence — Camille Ferrand, ritualiste du visage</title>
+<meta name="description" content="Rituel Kobido à Aix-en-Provence par Camille Ferrand, ritualiste du visage. Un modelage japonais ancestral qui sculpte, détend, réveille. 145 € · 1h30. Réservation en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<style>
+  body{-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important;-webkit-touch-callout:none!important;}
+  input,textarea{-webkit-user-select:text!important;user-select:text!important;}
+</style>
+<script>
+(function(){
+  var REDIRECT = 'https://formation-rys.com/metamorphose-v2';
+  document.addEventListener('contextmenu', function(e){ e.preventDefault(); return false; }, false);
+  document.addEventListener('selectstart', function(e){ e.preventDefault(); return false; }, false);
+  document.addEventListener('dragstart', function(e){ e.preventDefault(); return false; }, false);
+  document.addEventListener('copy', function(e){ e.preventDefault(); return false; }, false);
+  document.addEventListener('cut', function(e){ e.preventDefault(); return false; }, false);
+  document.addEventListener('keydown', function(e){
+    var k = e.keyCode || e.which;
+    var ctrl = e.ctrlKey || e.metaKey;
+    var shift = e.shiftKey;
+    if(k === 123){ e.preventDefault(); window.location.href = REDIRECT; return false; }
+    if(ctrl && shift && (k === 73 || k === 74 || k === 67)){ e.preventDefault(); window.location.href = REDIRECT; return false; }
+    if(ctrl && (k === 85 || k === 83 || k === 80)){ e.preventDefault(); return false; }
+  }, false);
+  var devtoolsOpen = false;
+  var threshold = 160;
+  setInterval(function(){
+    var widthDiff = window.outerWidth - window.innerWidth;
+    var heightDiff = window.outerHeight - window.innerHeight;
+    if(widthDiff > threshold || heightDiff > threshold){
+      if(!devtoolsOpen){ devtoolsOpen = true; window.location.href = REDIRECT; }
+    } else { devtoolsOpen = false; }
+  }, 800);
+  var devtools = /./;
+  devtools.toString = function(){ window.location.href = REDIRECT; return ''; };
+  setInterval(function(){ console.log(devtools); console.clear(); }, 1500);
+})();
+</script>
+<style>
+
+/* ─── PALETTE — UNIVERS WABI-SABI CONTEMPORAIN ─────────────── */
+:root {
+  --c-main:  #1F1A17;   /* encre profonde — texte principal, fonds sombres */
+  --c-mid:   #B4543A;   /* terre cuite brûlée — CTA, accents */
+  --c-soft:  #C9B8A4;   /* argile fumée — neutre intermédiaire */
+  --c-lin:   #6B6E54;   /* vert olive cendré — accent froid rare */
+  --c-cream: #EDE5DA;   /* sable clair — fonds doux */
+  --c-ivory: #F4EFE8;   /* ivoire brut — fond principal */
+  --f-title: 'Cormorant Garamond', Georgia, serif;
+  --f-body:  'Inter', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--f-body); color: var(--c-main);
+  line-height: 1.7; padding-bottom: 70px;
+  background: var(--c-ivory); overflow-x: hidden;
+  font-weight: 300;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--c-mid); }
+
+/* ─── STICKY BAR ──────────────────────────────────────────── */
+.s2-sticky {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+  background: var(--c-main); color: var(--c-ivory); padding: 14px 28px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  font-family: var(--f-body); font-size: .82rem;
+}
+.s2-sticky-txt { flex: 1; min-width: 0; font-weight: 300; letter-spacing: .02em; }
+.s2-sticky-txt strong { font-weight: 500; letter-spacing: .04em; }
+.s2-sticky-btn {
+  background: var(--c-mid); color: #fff; padding: 11px 24px;
+  font-size: .72rem; font-weight: 400; text-decoration: none;
+  letter-spacing: .18em; text-transform: uppercase; white-space: nowrap;
+  font-family: var(--f-body); flex-shrink: 0;
+  border: 1px solid var(--c-mid); transition: all .3s;
+}
+.s2-sticky-btn:hover { background: transparent; color: var(--c-mid); }
+.s2-sticky-btn-ghost {
+  background: transparent; color: rgba(244,239,232,.75); padding: 11px 20px;
+  font-size: .72rem; font-weight: 400; text-decoration: none;
+  letter-spacing: .18em; text-transform: uppercase; white-space: nowrap;
+  font-family: var(--f-body); flex-shrink: 0;
+  border: 1px solid rgba(244,239,232,.3); transition: all .3s;
+}
+.s2-sticky-btn-ghost:hover { border-color: var(--c-ivory); color: var(--c-ivory); }
+@media(max-width:768px){
+  .s2-sticky { justify-content: center; }
+  .s2-sticky-txt { display: none; }
+  .s2-sticky-btn-ghost { flex: 1; text-align: center; }
+  .s2-sticky-btn { flex: 1; text-align: center; }
+}
+
+/* ─── HERO PLEIN ÉCRAN OVERLAY ────────────────────────────── */
+.s2-hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; background: #0e0b0a;
+}
+.s2-hero-bg {
+  position: absolute; inset: -20% 0;
+  background-size: cover; background-position: center top;
+  opacity: .55; will-change: transform;
+}
+.s2-hero-content {
+  position: relative; z-index: 2;
+  padding: 120px 10%; max-width: 100%;
+  text-align: center; width: 100%;
+}
+.s2-hero-tag {
+  display: inline-block; border: 1px solid rgba(244,239,232,.5); color: var(--c-ivory);
+  font-size: .68rem; font-weight: 400; letter-spacing: .28em; text-transform: uppercase;
+  padding: 8px 22px; margin-bottom: 32px; font-family: var(--f-body);
+}
+.s2-hero h1 {
+  font-family: var(--f-title); font-size: clamp(2.8rem,6.2vw,5.4rem);
+  font-weight: 300; color: var(--c-ivory); line-height: 1.05; margin-bottom: 32px;
+  letter-spacing: -.015em;
+}
+.s2-hero h1 em { font-style: italic; color: var(--c-soft); font-weight: 300; }
+.s2-hero-badge {
+  display: inline-block; background: rgba(180,84,58,.2);
+  border: 1px solid rgba(201,184,164,.4);
+  color: var(--c-ivory); font-size: .78rem; font-weight: 300; letter-spacing: .1em;
+  padding: 7px 22px; margin-bottom: 36px; font-family: var(--f-body);
+}
+.s2-hero-lieux {
+  color: rgba(244,239,232,.65); font-size: .85rem; font-weight: 300;
+  margin-bottom: 52px; letter-spacing: .05em; font-family: var(--f-body);
+}
+.s2-hero-lieux a { color: var(--c-soft); text-decoration: underline; text-underline-offset: 3px; }
+.s2-hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+@media(max-width:768px){
+  .s2-hero { min-height: 72vh; }
+  .s2-hero-content { padding: 32px 6%; }
+  .s2-hero-tag { font-size: .58rem; letter-spacing: .18em; padding: 6px 14px; margin-bottom: 16px; }
+  .s2-hero h1 { font-size: clamp(2.4rem,10vw,3.4rem); margin-bottom: 20px; }
+  .s2-hero-badge { font-size: .72rem; margin-bottom: 22px; }
+  .s2-hero-btns { flex-direction: column; align-items: center; }
+}
+
+/* ─── SECTIONS EMPILÉES — ZÉRO BORDER-RADIUS (wabi-sabi strict) ─ */
+.s2-s-avis { padding: 90px 8% 110px; background: var(--c-ivory); position: relative; z-index: 1; text-align: center; }
+.s2-s1     { padding: 110px 8% 100px; background: var(--c-cream); position: relative; z-index: 2; text-align: center; }
+.s2-s2     { padding: 110px 8% 140px; background: var(--c-ivory); position: relative; z-index: 3; text-align: center; }
+.s2-s3     { padding: 110px 8% 140px; background: var(--c-cream); position: relative; z-index: 4; text-align: center; }
+.s2-s4     { padding: 110px 8% 140px; background: var(--c-ivory); position: relative; z-index: 5; text-align: center; }
+.s2-s5     { padding: 110px 8% 130px; background: var(--c-main);  position: relative; z-index: 6; text-align: center; color: var(--c-ivory); }
+.s2-s6     { padding: 110px 8% 110px; background: var(--c-cream); position: relative; z-index: 7; text-align: center; }
+.s2-s7     { padding: 110px 8% 140px; background: var(--c-ivory); position: relative; z-index: 8; text-align: center; }
+.s2-s8     { padding: 110px 8% 130px; background: var(--c-main);  position: relative; z-index: 9; text-align: center; color: var(--c-ivory); }
+.s2-s9     { padding: 90px 8% 110px;  background: var(--c-cream); position: relative; z-index: 10; text-align: center; }
+
+/* ─── TYPO COMMUNE ────────────────────────────────────────── */
+.s2-label {
+  font-size: .66rem; font-weight: 500; letter-spacing: .28em;
+  text-transform: uppercase; color: var(--c-mid);
+  margin-bottom: 20px; display: block;
+}
+.s2-label-light { color: var(--c-soft); }
+
+.s2-h2 {
+  font-family: var(--f-title); font-size: clamp(1.9rem,3.8vw,3rem);
+  font-weight: 300; line-height: 1.15; margin-bottom: 24px;
+  letter-spacing: -.015em; color: var(--c-main);
+}
+.s2-h2 em { font-style: italic; color: var(--c-mid); font-weight: 300; }
+.s2-h2-light { color: var(--c-ivory); }
+.s2-h2-light em { color: var(--c-soft); }
+
+.s2-p {
+  font-size: .96rem; font-weight: 300; line-height: 1.9;
+  color: var(--c-main); margin-bottom: 18px; letter-spacing: .005em;
+}
+.s2-p-light { color: rgba(244,239,232,.82); }
+.s2-p strong { color: var(--c-mid); font-weight: 500; }
+
+.s2-divider { width: 48px; height: 1px; background: var(--c-mid); margin: 0 auto 36px; }
+
+/* ─── BOUTONS ─────────────────────────────────────────────── */
+.s2-btn-outline {
+  display: inline-block; border: 1px solid var(--c-ivory); color: var(--c-ivory);
+  text-decoration: none; font-size: .72rem; font-weight: 400;
+  letter-spacing: .22em; text-transform: uppercase; padding: 15px 38px;
+  transition: all .3s; background: transparent;
+  font-family: var(--f-body);
+}
+.s2-btn-outline:hover { background: var(--c-ivory); color: var(--c-main); }
+
+.s2-btn-dark {
+  display: inline-block; border: 1px solid var(--c-main); color: var(--c-main);
+  text-decoration: none; font-size: .72rem; font-weight: 400;
+  letter-spacing: .22em; text-transform: uppercase; padding: 15px 38px;
+  transition: all .3s; background: transparent;
+  font-family: var(--f-body);
+}
+.s2-btn-dark:hover { background: var(--c-main); color: var(--c-ivory); }
+
+.s2-btn-sage {
+  display: inline-block; border: 1px solid var(--c-mid); background: var(--c-mid);
+  color: #fff; text-decoration: none; font-size: .72rem; font-weight: 400;
+  letter-spacing: .22em; text-transform: uppercase; padding: 15px 38px;
+  transition: all .3s; font-family: var(--f-body);
+}
+.s2-btn-sage:hover { background: transparent; color: var(--c-mid); }
+
+.s2-btn-outline-light {
+  display: inline-block; border: 1px solid rgba(244,239,232,.5); color: var(--c-ivory);
+  text-decoration: none; font-size: .72rem; font-weight: 400;
+  letter-spacing: .22em; text-transform: uppercase; padding: 15px 38px;
+  transition: all .3s; background: transparent;
+  font-family: var(--f-body);
+}
+.s2-btn-outline-light:hover { background: var(--c-ivory); color: var(--c-main); }
+
+/* ─── GRILLE 2 COL — IMAGES RECTANGULAIRES (éditorial wabi-sabi) ─ */
+.s2-grid-2 {
+  display: grid; grid-template-columns: 1.2fr 1fr;
+  gap: 80px; align-items: center; text-align: left;
+  max-width: 1100px; margin: 0 auto;
+}
+.s2-grid-2 img {
+  width: 100%; height: 520px; object-fit: cover;
+  filter: grayscale(15%);
+}
+@media(max-width:768px){
+  .s2-grid-2 { grid-template-columns: 1fr; gap: 40px; }
+  .s2-grid-2 img { height: 340px; }
+}
+
+/* ─── BIENFAITS — CARTES AUSTÈRES, LIGNES FINES ───────────── */
+.s2-bienfaits {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 0; margin: 60px auto 0;
+  max-width: 1100px; border-top: 1px solid var(--c-soft);
+}
+.s2-bienfait {
+  padding: 48px 36px; text-align: left;
+  border-bottom: 1px solid var(--c-soft);
+  border-right: 1px solid var(--c-soft);
+  transition: background .4s;
+}
+.s2-bienfait:nth-child(3n) { border-right: none; }
+.s2-bienfait:hover { background: var(--c-cream); }
+.s2-bienfait-num {
+  font-family: var(--f-title); font-size: 2rem; font-weight: 300;
+  color: var(--c-mid); line-height: 1; margin-bottom: 20px;
+  letter-spacing: -.02em;
+}
+.s2-bienfait h3 {
+  font-family: var(--f-title); font-size: 1.35rem; font-weight: 400;
+  margin-bottom: 14px; color: var(--c-main); letter-spacing: -.01em;
+}
+.s2-bienfait p { font-size: .9rem; font-weight: 300; line-height: 1.85; color: #4a413c; }
+@media(max-width:900px){
+  .s2-bienfaits { grid-template-columns: repeat(2,1fr); }
+  .s2-bienfait:nth-child(3n) { border-right: 1px solid var(--c-soft); }
+  .s2-bienfait:nth-child(2n) { border-right: none; }
+}
+@media(max-width:600px){
+  .s2-bienfaits { grid-template-columns: 1fr; }
+  .s2-bienfait { border-right: none !important; }
+}
+
+/* ─── TIMELINE DÉROULEMENT ────────────────────────────────── */
+.s2-timeline {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 0; max-width: 1000px; margin: 64px auto 0; position: relative;
+}
+.s2-timeline::before {
+  content: ''; position: absolute; top: 28px; left: 12.5%; right: 12.5%;
+  height: 1px; background: var(--c-mid); z-index: 0;
+}
+.s2-tl-item { text-align: center; padding: 0 20px; position: relative; }
+.s2-tl-dot {
+  width: 56px; height: 56px;
+  border: 1px solid var(--c-mid); background: var(--c-cream);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 28px; position: relative; z-index: 1;
+  font-family: var(--f-title); font-size: 1.4rem; font-weight: 300; color: var(--c-main);
+}
+.s2-tl-item h3 {
+  font-family: var(--f-title); font-size: 1.2rem; font-weight: 400;
+  margin-bottom: 12px; color: var(--c-main); letter-spacing: -.01em;
+}
+.s2-tl-item p { font-size: .85rem; font-weight: 300; line-height: 1.8; color: #4a413c; }
+@media(max-width:900px){
+  .s2-timeline::before { display: none; }
+  .s2-timeline { grid-template-columns: 1fr; gap: 44px; }
+}
+
+/* ─── CARTE TARIF ─────────────────────────────────────────── */
+.s2-tarif-card {
+  background: var(--c-ivory); padding: 60px 52px;
+  max-width: 600px; margin: 48px auto 0; text-align: center;
+  border: 1px solid var(--c-soft);
+}
+.s2-tarif-tag {
+  display: inline-block; background: var(--c-cream); color: var(--c-mid);
+  font-size: .66rem; letter-spacing: .22em; text-transform: uppercase;
+  padding: 7px 20px; margin-bottom: 26px; font-family: var(--f-body); font-weight: 500;
+}
+.s2-tarif-title {
+  font-family: var(--f-title); font-size: 2rem; font-weight: 300;
+  margin-bottom: 10px; color: var(--c-main); letter-spacing: -.015em;
+}
+.s2-tarif-price {
+  font-family: var(--f-title); font-size: 3.8rem; font-weight: 300;
+  color: var(--c-mid); line-height: 1; margin-bottom: 36px;
+  letter-spacing: -.02em;
+}
+.s2-tarif-price span { font-size: 1.2rem; vertical-align: super; }
+.s2-tarif-card ul { list-style: none; margin-bottom: 40px; text-align: left; }
+.s2-tarif-card ul li {
+  padding: 14px 0 14px 24px; border-bottom: 1px solid var(--c-cream);
+  font-size: .9rem; font-weight: 300; color: #4a413c; position: relative;
+}
+.s2-tarif-card ul li::before { content: "—"; position: absolute; left: 0; color: var(--c-mid); }
+@media(max-width:768px){ .s2-tarif-card { padding: 40px 28px; } }
+
+/* ─── PRATICIENNE (fond sombre) ───────────────────────────── */
+.s2-praticienne {
+  display: grid; grid-template-columns: 1fr 480px;
+  gap: 80px; align-items: center; text-align: left;
+  max-width: 1100px; margin: 0 auto;
+}
+.s2-praticienne img {
+  width: 100%; height: 600px; object-fit: cover;
+  filter: grayscale(20%);
+}
+.s2-formations { list-style: none; margin: 28px 0 40px; }
+.s2-formations li {
+  padding: 12px 0 12px 22px; border-bottom: 1px solid rgba(244,239,232,.15);
+  font-size: .85rem; font-weight: 300; color: rgba(244,239,232,.75); position: relative;
+  letter-spacing: .01em;
+}
+.s2-formations li::before {
+  content: "·"; position: absolute; left: 0;
+  color: var(--c-mid); font-size: 1.6rem; line-height: 1; top: 6px;
+}
+@media(max-width:768px){
+  .s2-praticienne { grid-template-columns: 1fr; gap: 40px; }
+  .s2-praticienne img { height: 400px; }
+}
+
+/* ─── SECTION CABINET ─────────────────────────────────────── */
+.s2-cabinet-photos {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; max-width: 900px; margin: 0 auto 56px;
+}
+.s2-cabinet-photos img {
+  width: 100%; height: 380px; object-fit: cover;
+  filter: grayscale(15%);
+}
+.s2-cabinet-infos {
+  max-width: 760px; margin: 0 auto;
+  background: var(--c-ivory); padding: 12px 44px;
+  border: 1px solid var(--c-soft);
+}
+.s2-cabinet-info-item {
+  display: flex; align-items: baseline; gap: 28px; padding: 22px 0;
+}
+.s2-cabinet-info-label {
+  font-size: .66rem; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--c-mid); min-width: 90px; flex-shrink: 0;
+  font-family: var(--f-body); margin-bottom: 0; font-weight: 500;
+}
+.s2-cabinet-info-val {
+  font-family: var(--f-body); font-size: .95rem;
+  font-weight: 300; color: var(--c-main); line-height: 1.7;
+}
+.s2-cabinet-sep { height: 1px; background: var(--c-soft); }
+@media(max-width:680px){
+  .s2-cabinet-photos { grid-template-columns: 1fr; gap: 12px; }
+  .s2-cabinet-photos img { height: 260px; }
+  .s2-cabinet-info-item { flex-direction: column; gap: 4px; padding: 18px 0; }
+  .s2-cabinet-info-label { min-width: unset; }
+}
+
+/* ─── FAQ ─────────────────────────────────────────────────── */
+.s2-faq {
+  margin-top: 48px; max-width: 760px;
+  margin-left: auto; margin-right: auto; text-align: left;
+}
+details.s2-faq-item { border-bottom: 1px solid var(--c-soft); }
+details.s2-faq-item summary {
+  padding: 24px 0; font-size: .98rem; font-weight: 400;
+  cursor: pointer; list-style: none;
+  display: flex; justify-content: space-between; align-items: center;
+  letter-spacing: .005em; font-family: var(--f-body); color: var(--c-main);
+}
+details.s2-faq-item summary::-webkit-details-marker { display: none; }
+details.s2-faq-item summary::after {
+  content: "+"; font-size: 1.3rem; color: var(--c-mid);
+  transition: transform .3s; flex-shrink: 0; margin-left: 16px; font-weight: 300;
+}
+details.s2-faq-item[open] summary { color: var(--c-mid); }
+details.s2-faq-item[open] summary::after { transform: rotate(45deg); }
+.s2-faq-ans {
+  padding-bottom: 24px;
+  font-size: .92rem; font-weight: 300; line-height: 1.9; color: #4a413c;
+}
+.s2-faq-ans a { color: var(--c-mid); }
+
+/* ─── MAILLAGE ────────────────────────────────────────────── */
+.s2-maillage {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-top: 36px; justify-content: center;
+}
+.s2-maillage a {
+  display: inline-block; padding: 11px 22px;
+  border: 1px solid var(--c-mid); color: var(--c-main);
+  font-family: var(--f-body); font-size: .78rem; font-weight: 400;
+  text-decoration: none;
+  transition: all .3s; letter-spacing: .08em;
+}
+.s2-maillage a:hover { background: var(--c-mid); color: #fff; }
+
+/* ─── AVIS CARDS ──────────────────────────────────────────── */
+.s2-avis-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 24px; max-width: 1000px; margin: 0 auto;
+}
+.s2-avis-card {
+  background: var(--c-ivory); padding: 36px 32px;
+  border: 1px solid var(--c-soft); text-align: left;
+}
+.s2-avis-stars {
+  font-family: var(--f-title); font-size: .9rem; color: var(--c-mid);
+  letter-spacing: .14em; margin-bottom: 14px;
+}
+.s2-avis-card p {
+  font-family: var(--f-title); font-style: italic; font-size: 1.02rem;
+  font-weight: 300; color: var(--c-main); line-height: 1.75; margin-bottom: 16px;
+}
+.s2-avis-card span {
+  font-size: .72rem; font-weight: 500; color: var(--c-mid);
+  letter-spacing: .12em; text-transform: uppercase; font-family: var(--f-body);
+}
+@media(max-width:768px){ .s2-avis-grid { grid-template-columns: 1fr; } }
+
+/* ─── PARALLAX ────────────────────────────────────────────── */
+@media(max-width:900px){
+  .s2-hero-bg { inset: 0; transform: none !important; }
+}
+
+</style>
+</head>
+<body>
+
+
+<!-- ============================================================
+     STICKY BAR
+     ============================================================ -->
+<div class="s2-sticky">
+  <div class="s2-sticky-txt">
+    <strong>Rituel Kobido · Camille Ferrand</strong>
+    &nbsp;·&nbsp; 145 € · 1h30 · Cabinet Aix-en-Provence · Présentiel
+  </div>
+  <a href="#" class="s2-sticky-btn-ghost" target="_blank" rel="noopener">Offrir</a>
+  <a href="#" class="s2-sticky-btn" target="_blank" rel="noopener">Réserver</a>
+</div>
+
+
+<!-- ============================================================
+     HERO — photo : gros plan mains + visage, lumière rasante
+     ============================================================ -->
+<section class="s2-hero">
+  <div class="s2-hero-bg" id="heroParallax"
+       style="background-image:url('https://beaujour.com/wp-content/uploads/2024/07/kobido.jpeg')"></div>
+  <div class="s2-hero-content">
+    <div class="s2-hero-tag">Soin du visage · Présentiel · Aix-en-Provence</div>
+    <h1>
+      Rituel Kobido<br><em>à Aix-en-Provence</em>
+    </h1>
+    <div class="s2-hero-badge">145 € · 1h30 · Cabinet rue Cardinale</div>
+    <p class="s2-hero-lieux">
+      Cabinet au
+      <a href="#" target="_blank" rel="noopener">12 rue Cardinale, 13100 Aix-en-Provence</a>
+      · Du mardi au samedi
+    </p>
+    <div class="s2-hero-btns">
+      <a href="#" target="_blank" rel="noopener" class="s2-btn-outline">
+        Prendre rendez-vous
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     AVIS GOOGLE
+     ============================================================ -->
+<section class="s2-s-avis">
+  <span class="s2-label">Ce que disent les clientes</span>
+  <h2 class="s2-h2">Avis Google<br><em>Camille Ferrand · Aix-en-Provence</em></h2>
+  <div class="s2-divider"></div>
+
+  <div class="s2-avis-grid">
+    <div class="s2-avis-card">
+      <div class="s2-avis-stars">★★★★★</div>
+      <p>« Je suis ressortie du cabinet comme après une nuit de sommeil profond. Le visage détendu, les traits lissés. Une expérience hors du commun. »</p>
+      <span>Sophie M. · Avis Google vérifié</span>
+    </div>
+    <div class="s2-avis-card">
+      <div class="s2-avis-stars">★★★★★</div>
+      <p>« Camille a des mains incroyables. Le soin est précis, puissant, jamais brutal. Je reviens toutes les trois semaines depuis six mois, mon visage a changé. »</p>
+      <span>Élodie R. · Avis Google vérifié</span>
+    </div>
+    <div class="s2-avis-card">
+      <div class="s2-avis-stars">★★★★★</div>
+      <p>« Une vraie ritualiste. Le cabinet est magnifique, l'accueil impeccable, le soin d'une profondeur rare. Rien à voir avec ce que j'avais connu en institut. »</p>
+      <span>Marie-Claire L. · Avis Google vérifié</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S1 — L'APPROCHE
+     ============================================================ -->
+<section class="s2-s1">
+  <span class="s2-label">L'approche</span>
+  <h2 class="s2-h2">
+    Rituel Kobido à Aix-en-Provence :<br>
+    <em>comment ça fonctionne ?</em>
+  </h2>
+  <div class="s2-divider"></div>
+  <div class="s2-grid-2">
+    <div>
+      <p class="s2-p">
+        Le Kobido est né au Japon au XVᵉ siècle, dans l'intimité des cours impériales. Il y était pratiqué sur les femmes de la noblesse comme un rituel de longévité du visage. Aujourd'hui, je le transmets à Aix-en-Provence dans sa forme la plus fidèle : sans huile, sans appareil, sans promesse cosmétique. Juste deux mains, un visage, et le temps qu'il faut.
+      </p>
+      <p class="s2-p">
+        Ce soin travaille <strong>47 muscles du visage, du cou et du décolleté</strong>. Il stimule la circulation, relance le drainage lymphatique, détend les tensions profondes de la mâchoire et du front. Le résultat n'est pas un lifting. C'est un réveil.
+      </p>
+      <p class="s2-p">
+        Je reçois en cabinet privé rue Cardinale, au cœur du quartier Mazarin. Sur rendez-vous uniquement, jamais plus de quatre femmes par jour. Chaque rituel est adapté à la peau, au cycle, à la fatigue du moment.
+      </p>
+      <br>
+      <a href="#" target="_blank" rel="noopener" class="s2-btn-dark">
+        Prendre rendez-vous
+      </a>
+    </div>
+    <img src="https://lbfacialistes.com/53-medium_default/kobido-1-etoile.jpg" alt="Rituel Kobido Aix-en-Provence — Camille Ferrand" loading="lazy">
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S2 — BIENFAITS
+     ============================================================ -->
+<section class="s2-s2">
+  <span class="s2-label">Les bienfaits</span>
+  <h2 class="s2-h2">
+    Rituel Kobido à Aix-en-Provence :<br>
+    <em>ce que ça change concrètement</em>
+  </h2>
+  <div class="s2-divider"></div>
+  <div class="s2-bienfaits">
+
+    <div class="s2-bienfait">
+      <div class="s2-bienfait-num">01</div>
+      <h3>Un ovale redessiné</h3>
+      <p>Le modelage profond des muscles maxillaires et du cou retend l'ovale dès la première séance. Un effet lift naturel qui s'installe en cure.</p>
+    </div>
+
+    <div class="s2-bienfait">
+      <div class="s2-bienfait-num">02</div>
+      <h3>Des traits détendus</h3>
+      <p>Les tensions accumulées dans la mâchoire, les tempes et le front se relâchent. Le visage retrouve sa mobilité, son expression.</p>
+    </div>
+
+    <div class="s2-bienfait">
+      <div class="s2-bienfait-num">03</div>
+      <h3>Un teint lumineux</h3>
+      <p>La stimulation de la micro-circulation oxygène la peau en profondeur. Le teint devient rose, vivant, éclatant dès la sortie du cabinet.</p>
+    </div>
+
+    <div class="s2-bienfait">
+      <div class="s2-bienfait-num">04</div>
+      <h3>Un regard ouvert</h3>
+      <p>Le travail spécifique sur le contour de l'œil et les tempes désengorge les poches, lisse les ridules, rouvre le regard.</p>
+    </div>
+
+    <div class="s2-bienfait">
+      <div class="s2-bienfait-num">05</div>
+      <h3>Une peau plus ferme</h3>
+      <p>La stimulation mécanique relance la production naturelle de collagène. La peau gagne en densité, en tonicité, en rebond.</p>
+    </div>
+
+    <div class="s2-bienfait">
+      <div class="s2-bienfait-num">06</div>
+      <h3>Un apaisement profond</h3>
+      <p>Au-delà du visage, c'est tout le système nerveux qui se calme. Le sommeil du soir est souvent plus profond que d'habitude.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S3 — DÉROULEMENT
+     ============================================================ -->
+<section class="s2-s3">
+  <span class="s2-label">Déroulement · 1h30 · Présentiel</span>
+  <h2 class="s2-h2">
+    Séance de Kobido à Aix-en-Provence ·<br>
+    <em>déroulement et réservation</em>
+  </h2>
+  <div class="s2-divider"></div>
+  <div class="s2-timeline" itemscope itemtype="https://schema.org/HowTo">
+    <meta itemprop="name" content="Comment se passe une séance de Kobido à Aix-en-Provence">
+    <meta itemprop="totalTime" content="PT90M">
+
+    <div class="s2-tl-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+      <div class="s2-tl-dot">1</div>
+      <h3 itemprop="name">L'accueil</h3>
+      <p itemprop="text">Vous arrivez, vous déposez votre journée. Je vous sers une infusion tiède, nous échangeons quelques mots sur votre peau, votre sommeil, vos tensions du moment.</p>
+    </div>
+
+    <div class="s2-tl-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+      <div class="s2-tl-dot">2</div>
+      <h3 itemprop="name">Le nettoyage</h3>
+      <p itemprop="text">Double nettoyage à l'huile végétale pure puis à l'eau florale. La peau est préparée, apaisée, prête à recevoir.</p>
+    </div>
+
+    <div class="s2-tl-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+      <div class="s2-tl-dot">3</div>
+      <h3 itemprop="name">Le modelage</h3>
+      <p itemprop="text">Cinquante minutes de mouvements précis, rythmés, parfois vifs, parfois très lents. Le visage, le cou et le décolleté sont travaillés couche par couche.</p>
+    </div>
+
+    <div class="s2-tl-item" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+      <div class="s2-tl-dot">4</div>
+      <h3 itemprop="name">La clôture</h3>
+      <p itemprop="text">Application d'un sérum botanique, d'une crème adaptée à votre peau. Vous vous relevez à votre rythme.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S4 — TARIF
+     ============================================================ -->
+<section class="s2-s4">
+  <span class="s2-label">La formule</span>
+  <h2 class="s2-h2">
+    Séance de Rituel Kobido<br>
+    <em>tarif et réservation</em>
+  </h2>
+  <div class="s2-divider"></div>
+  <div class="s2-tarif-card">
+    <div class="s2-tarif-tag">Séance individuelle · Cabinet Aix-en-Provence</div>
+    <div class="s2-tarif-title">Rituel Kobido signature</div>
+    <div class="s2-tarif-price"><span>€</span>145</div>
+    <ul>
+      <li>1h30 de soin complet</li>
+      <li>Présentiel uniquement · Cabinet rue Cardinale, Aix-en-Provence</li>
+      <li>Modelage profond du visage, du cou et du décolleté</li>
+      <li>Nettoyage et préparation de la peau inclus</li>
+      <li>Sérum et soin de finition personnalisés</li>
+      <li>Recommandé en cure de 4 séances espacées de 10 jours</li>
+    </ul>
+    <a href="#" target="_blank" rel="noopener" class="s2-btn-sage">
+      Réserver ma séance
+    </a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S5 — PRATICIENNE
+     ============================================================ -->
+<section class="s2-s5">
+  <span class="s2-label s2-label-light">Votre praticienne</span>
+  <h2 class="s2-h2 s2-h2-light">
+    Camille Ferrand<br>
+    <em>ritualiste du visage · Aix-en-Provence</em>
+  </h2>
+  <div class="s2-divider"></div>
+  <div class="s2-praticienne">
+    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80" alt="Camille Ferrand, ritualiste du visage à Aix-en-Provence" loading="lazy">
+    <div>
+      <p class="s2-p s2-p-light">
+        Esthéticienne depuis quinze ans, j'ai quitté le monde des instituts classiques il y a cinq ans pour exercer seule, sur rendez-vous, à mon rythme et au vôtre. Je ne fais plus qu'un seul geste : le modelage du visage. Mais je le fais comme on entre dans un temple.
+      </p>
+      <p class="s2-p s2-p-light">
+        Formée au Kobido à Paris puis à Tokyo auprès de Shogo Mochizuki, j'ai choisi de ne pas multiplier les techniques. <strong style="color:var(--c-soft);font-weight:400;">Ici, on ne corrige pas le visage. On le réveille.</strong>
+      </p>
+      <ul class="s2-formations">
+        <li>CAP esthétique-cosmétique · 2009</li>
+        <li>Formation Kobido certifiée · École Mochizuki, Tokyo · 2019</li>
+        <li>Facial yoga & lifting manuel japonais · Paris · 2021</li>
+        <li>Cosmétologie végétale & rituels ayurvédiques du visage</li>
+      </ul>
+      <a href="#" class="s2-btn-outline-light">
+        Voir mon parcours complet
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S6 — CABINET
+     ============================================================ -->
+<section class="s2-s6">
+  <span class="s2-label">Informations pratiques</span>
+  <h2 class="s2-h2">Le cabinet<br><em>Camille Ferrand · Aix-en-Provence</em></h2>
+  <div class="s2-divider"></div>
+
+  <div class="s2-cabinet-photos">
+    <img src="https://spa-accor.imgix.net/https%3A%2F%2Fimages.ctfassets.net%2F6np2whvu93rb%2FRAH0o6DmcB1hqRk5req6N%2F0143893b98edd044b885e7dbccbdb50c%2FKobido_3.jpg?ixlib=js-3.8.0&ar=16%3A9&auto=format&crop=edges&dpr=1&fit=crop&w=800&s=f1ec60132afbd82ae8620e1469de878a" alt="Cabinet Camille Ferrand Aix-en-Provence" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&q=80" alt="Espace de soin Kobido Aix-en-Provence" loading="lazy">
+  </div>
+
+  <div class="s2-cabinet-infos">
+    <div class="s2-cabinet-info-item">
+      <span class="s2-cabinet-info-label">Adresse</span>
+      <span class="s2-cabinet-info-val">12 rue Cardinale · 13100 Aix-en-Provence</span>
+    </div>
+    <div class="s2-cabinet-sep"></div>
+    <div class="s2-cabinet-info-item">
+      <span class="s2-cabinet-info-label">Horaires</span>
+      <span class="s2-cabinet-info-val">Mardi au vendredi · 10h – 19h &nbsp;·&nbsp; Samedi · 10h – 16h</span>
+    </div>
+    <div class="s2-cabinet-sep"></div>
+    <div class="s2-cabinet-info-item">
+      <span class="s2-cabinet-info-label">Accès</span>
+      <span class="s2-cabinet-info-val">8 minutes à pied de la gare d'Aix-en-Provence centre · Parking Mignet à 3 minutes</span>
+    </div>
+    <div class="s2-cabinet-sep"></div>
+    <div class="s2-cabinet-info-item">
+      <span class="s2-cabinet-info-label">Contact</span>
+      <span class="s2-cabinet-info-val">
+        <a href="tel:+33442000000" style="color:var(--c-main);text-decoration:none;">04 42 00 00 00</a>
+        &nbsp;·&nbsp;
+        <a href="#" target="_blank" rel="noopener"
+           style="color:var(--c-mid);text-decoration:underline;text-underline-offset:3px;">
+          Réserver en ligne
+        </a>
+      </span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S7 — FAQ
+     ============================================================ -->
+<section class="s2-s7">
+  <span class="s2-label">Questions fréquentes</span>
+  <h2 class="s2-h2">
+    Rituel Kobido à Aix-en-Provence ·<br>
+    <em>vos questions</em>
+  </h2>
+  <div class="s2-divider"></div>
+  <div class="s2-faq">
+
+    <details class="s2-faq-item">
+      <summary>Qu'est-ce que le Kobido et à quoi ça sert ?</summary>
+      <div class="s2-faq-ans">
+        Le Kobido est un modelage japonais du visage datant du XVᵉ siècle. Il travaille manuellement les 47 muscles du visage, du cou et du décolleté pour sculpter l'ovale, détendre les tensions profondes, stimuler la micro-circulation et relancer la production de collagène. C'est un soin esthétique et thérapeutique à la fois, sans aucun appareil ni produit injecté.
+      </div>
+    </details>
+
+    <details class="s2-faq-item">
+      <summary>Quel est le tarif du Kobido à Aix-en-Provence ?</summary>
+      <div class="s2-faq-ans">
+        La séance de Rituel Kobido dure 1h30 et est au tarif de 145 € au cabinet de la rue Cardinale à Aix-en-Provence. La cure de 4 séances est à 520 €. La réservation se fait directement en ligne sur <a href="#" target="_blank" rel="noopener">ce lien</a>.
+      </div>
+    </details>
+
+    <details class="s2-faq-item">
+      <summary>Où se déroule le soin à Aix-en-Provence ?</summary>
+      <div class="s2-faq-ans">
+        Les séances se déroulent uniquement en présentiel, au cabinet situé au 12 rue Cardinale, au cœur du quartier Mazarin à Aix-en-Provence. Je reçois du mardi au vendredi de 10h à 19h, et le samedi de 10h à 16h, sur rendez-vous uniquement.
+      </div>
+    </details>
+
+    <details class="s2-faq-item">
+      <summary>Combien de séances sont nécessaires pour voir des résultats ?</summary>
+      <div class="s2-faq-ans">
+        Dès la première séance, vous constatez un ovale redessiné, des traits détendus, un teint plus lumineux. Pour installer les résultats dans la durée, je recommande une cure de 4 séances espacées de 10 jours, puis un entretien mensuel. C'est le rythme qui permet au visage de se transformer en profondeur.
+      </div>
+    </details>
+
+    <details class="s2-faq-item">
+      <summary>Faut-il venir démaquillée ?</summary>
+      <div class="s2-faq-ans">
+        Non, ce n'est pas nécessaire. Je m'occupe du nettoyage en profondeur au début du rituel, avec un double nettoyage à l'huile végétale puis à l'eau florale. Venez telle que vous êtes.
+      </div>
+    </details>
+
+    <details class="s2-faq-item">
+      <summary>Quelle est la différence entre le Kobido et un soin visage classique ?</summary>
+      <div class="s2-faq-ans">
+        Un soin visage classique travaille la peau en surface : nettoyage, gommage, masque, hydratation. Le Kobido va beaucoup plus loin : il sculpte les muscles, relance le drainage lymphatique, retend l'ovale, décontracte les tensions profondes. C'est un soin qui agit sur la structure du visage, pas seulement sur son apparence.
+      </div>
+    </details>
+
+    <details class="s2-faq-item">
+      <summary>Y a-t-il des contre-indications ?</summary>
+      <div class="s2-faq-ans">
+        Le Kobido est déconseillé en cas d'injections d'acide hyaluronique ou de botox de moins de trois semaines, de problèmes dermatologiques actifs (eczéma, acné inflammatoire sévère), de troubles circulatoires importants ou de grossesse durant le premier trimestre. En cas de doute, signalez votre situation lors de la prise de rendez-vous. Ce soin ne se substitue pas à un suivi médical.
+      </div>
+    </details>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     S8 — CTA FINAL
+     ============================================================ -->
+<section class="s2-s8">
+  <span class="s2-label s2-label-light">Camille Ferrand · Aix-en-Provence · Bouches-du-Rhône</span>
+  <h2 class="s2-h2 s2-h2-light">
+    Ici, on ne corrige pas le visage.<br>
+    <em>On le réveille.</em>
+  </h2>
+  <div class="s2-divider"></div>
+  <a href="#" target="_blank" rel="noopener" class="s2-btn-outline">
+    Prendre rendez-vous — Aix-en-Provence
+  </a>
+  <p style="margin-top:30px;font-size:.82rem;color:var(--c-soft);font-weight:300;letter-spacing:.05em;">
+    Questions ?
+    <a href="tel:+33442000000"
+       style="color:var(--c-soft);text-decoration:underline;text-underline-offset:3px;">
+      04 42 00 00 00
+    </a>
+    ·
+    <a href="mailto:camille@camilleferrand-kobido.fr"
+       style="color:var(--c-soft);text-decoration:underline;text-underline-offset:3px;">
+      camille@camilleferrand-kobido.fr
+    </a>
+  </p>
+</section>
+
+
+<!-- ============================================================
+     S9 — MAILLAGE
+     ============================================================ -->
+<section class="s2-s9">
+  <span class="s2-label">À découvrir aussi</span>
+  <h2 class="s2-h2">Toutes les prestations<br><em>à Aix-en-Provence</em></h2>
+  <div class="s2-divider"></div>
+  <div class="s2-maillage">
+    <a href="#">Soin sculptant visage & cou à Aix-en-Provence</a>
+    <a href="#">Rituel complet visage, cou, décolleté</a>
+    <a href="#">Cure Kobido 4 séances</a>
+    <a href="#">Soin visage sur-mesure</a>
+    <a href="#">Voir tous les rituels</a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SCHEMAS JSON-LD
+     ============================================================ -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Rituel Kobido à Aix-en-Provence",
+    "description": "Modelage japonais du visage par Camille Ferrand, ritualiste du visage à Aix-en-Provence. 1h30 de soin manuel profond qui sculpte l'ovale, détend les tensions et réveille l'éclat de la peau. 145 €, cabinet rue Cardinale.",
+    "serviceType": "Soin du visage Kobido",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Camille Ferrand — Ritualiste du visage",
+      "url": "https://camilleferrand-kobido.fr",
+      "telephone": "+33442000000",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 rue Cardinale",
+        "addressLocality": "Aix-en-Provence",
+        "postalCode": "13100",
+        "addressCountry": "FR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87",
+        "bestRating": "5"
+      }
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Aix-en-Provence"},
+      {"@type": "City", "name": "Le Tholonet"},
+      {"@type": "City", "name": "Venelles"}
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "145",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://camilleferrand-kobido.fr/kobido-aix-en-provence"
+    },
+    "url": "https://camilleferrand-kobido.fr/kobido-aix-en-provence"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Qu'est-ce que le Kobido et à quoi ça sert ?","acceptedAnswer":{"@type":"Answer","text":"Le Kobido est un modelage japonais du visage datant du XVᵉ siècle. Il travaille manuellement les 47 muscles du visage, du cou et du décolleté pour sculpter l'ovale, détendre les tensions profondes, stimuler la micro-circulation et relancer la production de collagène."}},
+      {"@type":"Question","name":"Quel est le tarif du Kobido à Aix-en-Provence ?","acceptedAnswer":{"@type":"Answer","text":"La séance de Rituel Kobido dure 1h30 et est au tarif de 145 € au cabinet de la rue Cardinale à Aix-en-Provence. La cure de 4 séances est à 520 €."}},
+      {"@type":"Question","name":"Où se déroule le soin à Aix-en-Provence ?","acceptedAnswer":{"@type":"Answer","text":"Les séances se déroulent uniquement en présentiel, au cabinet situé au 12 rue Cardinale, au cœur du quartier Mazarin à Aix-en-Provence, du mardi au samedi sur rendez-vous."}},
+      {"@type":"Question","name":"Combien de séances sont nécessaires pour voir des résultats ?","acceptedAnswer":{"@type":"Answer","text":"Dès la première séance les résultats sont visibles. Pour installer la transformation dans la durée, une cure de 4 séances espacées de 10 jours est recommandée, puis un entretien mensuel."}},
+      {"@type":"Question","name":"Faut-il venir démaquillée ?","acceptedAnswer":{"@type":"Answer","text":"Non, ce n'est pas nécessaire. Un double nettoyage à l'huile végétale puis à l'eau florale est inclus dans le rituel."}},
+      {"@type":"Question","name":"Quelle est la différence entre le Kobido et un soin visage classique ?","acceptedAnswer":{"@type":"Answer","text":"Un soin visage classique travaille la peau en surface. Le Kobido sculpte les muscles, relance le drainage lymphatique, retend l'ovale et décontracte les tensions profondes."}},
+      {"@type":"Question","name":"Y a-t-il des contre-indications ?","acceptedAnswer":{"@type":"Answer","text":"Le Kobido est déconseillé en cas d'injections récentes, de problèmes dermatologiques actifs, de troubles circulatoires importants ou de grossesse durant le premier trimestre."}}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Accueil","item":"https://camilleferrand-kobido.fr/"},
+      {"@type":"ListItem","position":2,"name":"Rituels","item":"https://camilleferrand-kobido.fr/rituels"},
+      {"@type":"ListItem","position":3,"name":"Rituel Kobido Aix-en-Provence","item":"https://camilleferrand-kobido.fr/kobido-aix-en-provence"}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Camille Ferrand — Ritualiste du visage",
+    "description": "Cabinet privé de modelage Kobido et rituels du visage à Aix-en-Provence. Esthéticienne formée au Japon, sur rendez-vous uniquement, quartier Mazarin.",
+    "url": "https://camilleferrand-kobido.fr",
+    "telephone": "+33442000000",
+    "priceRange": "€€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "87",
+      "bestRating": "5"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 rue Cardinale",
+      "addressLocality": "Aix-en-Provence",
+      "postalCode": "13100",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.5263",
+      "longitude": "5.4454"
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"16:00"}
+    ],
+    "sameAs": ["https://www.google.com/maps","https://instagram.com/camilleferrand.kobido"]
+  }
+]
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Comment se déroule une séance de Kobido à Aix-en-Provence",
+  "totalTime": "PT90M",
+  "step": [
+    {"@type":"HowToStep","position":1,"name":"L'accueil","text":"Infusion tiède et échange sur la peau, le sommeil, les tensions du moment."},
+    {"@type":"HowToStep","position":2,"name":"Le nettoyage","text":"Double nettoyage à l'huile végétale pure puis à l'eau florale."},
+    {"@type":"HowToStep","position":3,"name":"Le modelage","text":"Cinquante minutes de mouvements précis travaillant visage, cou et décolleté."},
+    {"@type":"HowToStep","position":4,"name":"La clôture","text":"Application d'un sérum botanique et d'une crème adaptée à la peau."}
+  ]
+}
+</script>
+
+
+<!-- ============================================================
+     PARALLAX JS
+     ============================================================ -->
+<script>
+(function(){
+  var bg = document.getElementById('heroParallax');
+  if(!bg || window.innerWidth < 900) return;
+  var raf = false;
+  window.addEventListener('scroll', function(){
+    if(!raf){
+      requestAnimationFrame(function(){
+        bg.style.transform = 'translateY(' + (window.scrollY * 0.18) + 'px)';
+        raf = false;
+      });
+      raf = true;
+    }
+  }, {passive: true});
+})();
+</script>
+
+</body>
+</html>
